@@ -1,0 +1,158 @@
+<div class="menu_section_1">
+    <div class="search_menu col-lg-5 col-md-7 col-sm-7">
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" name="search"  placeholder="Search" aria-label="Search" autocomplete="off">
+            <button class="btn  search_btn" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+<div class="tab">
+    <button class="tablinks" onclick="selectFood(event, 'Pizza')" id="defaultOpen">Pizza</button>
+    <button class="tablinks" onclick="selectFood(event, 'Burger')">Burger</button>
+    <button class="tablinks" onclick="selectFood(event, 'Health')">Health</button>
+    <button class="tablinks" onclick="selectFood(event, 'Sandwich')">Sandwich</button>
+    <button class="tablinks" onclick="selectFood(event, 'Chinese')">chinese</button>
+    <button class="tablinks" onclick="selectFood(event, 'South Indian')">south indian</button>
+    <button class="tablinks" onclick="selectFood(event, 'Thali')">thali</button>
+    <button class="tablinks" onclick="selectFood(event, 'Chicken')">chicken</button>
+    <button class="tablinks" onclick="selectFood(event, 'Rolls')">rolls</button>
+    <button class="tablinks" onclick="selectFood(event, 'Paratha')">paratha</button>
+    <button class="tablinks" onclick="selectFood(event, 'Rice and Biryani')">rice and biryani</button>
+
+</div>
+
+<div id="Pizza" class="tabcontent">
+    <div class="row justify-content-between"  >
+        <div class="food_item col-lg-3 col-md-4 col-sm-5" *ngFor="let pizza of pizzaTypes">
+            <img src="{{pizza.pizzaImg}}" alt="" width="100%" />
+                <h3>{{pizza.pizzaName}}</h3>
+                <div class="priceBox">
+                <p>{{pizza.pizzaPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button" [routerLink]="['/pizza', pizza.id]" >Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Burger" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let burger of burgerTypes">
+            <img src="{{burger.burgerImg}}" alt="" width="100%" />
+                <h3>{{burger.burgerName}}</h3>
+                <div class="priceBox">
+                <p>{{burger.burgerPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button"  [routerLink]="['/burger', burger.id]">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Health" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button" [routerLink]="['/health', fruit.id]">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Sandwich" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Chinese" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="South Indian" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Thali" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Chicken" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Rolls" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Paratha" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Rice and Biryani" class="tabcontent food_types">
+    <div class="row">
+        <div class="food_item col-lg-3" *ngFor="let fruit of fruitplate">
+            <img src="{{fruit.fruitImg}}" alt="" width="100%" />
+                <h3>{{fruit.fruitName}}</h3>
+                <div class="priceBox">
+                <p>{{fruit.fruitPrice | currency:'INR'}} for one</p>
+                <button class="buynow_btn" type="button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+    <button class="backbtn" type="button" routerLink="../../menu">&#60;&#60;back</button>
+    <div class="row">
+        <div class=" col-lg-6">
+            <div class="orderplace_left">
+                <img class="order_img" src="{{pizzaData[0].pizzaImg}}" alt="" width="100%">
+                <div class="content_row">
+                    <h3>{{pizzaData[0].pizzaName}}</h3>
+                    <p>{{pizzaData[0].pizzaPrice | currency: 'INR'}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <form>
+                <div class="group col-lg-8 col-sm-10">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" placeholder="enter your name here" required>
+                </div>
+                <div class="group col-lg-8 col-sm-10">
+                    <label for="number" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" placeholder="enter your name here" required>
+                </div>
+                <div class="group col-lg-8 col-sm-10">
+                    <label for="exampleFormControlTextarea1" class="form-label">Your Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <div class="group col-lg-8 col-sm-10">
+                    <label for="exampleFormControlTextarea1" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" min="1" max="20" required>
+                </div>
+                <button type="button" class="placeorder_btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root
+{
+    --yellow: #facf1b;
+    --grey: #e8e8e8;
+    --dark-grey: #eaeaf2;
+    --orange: #a52b22;
+    --pink: #f5c3ae;
+    --blue: #008f95;
+    
+}
+@font-face {
+    font-family: title-font;
+    /* src: url("assets/font-family/Moniqa-MediumNarrowHeading.ttf"); */
+}
+body{
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.yellow-hr{
+    width: 40px;
+    height: 2px;
+    background-color: var(--yellow);
+}
+ 
+/* HOMEPAGE SCROLL */
+.owl-carousel .owl-item{
+    margin: 20px;
+}
+.owl-carousel .owl-stage{
+    width: 6848px !important;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    background-color: var(--orange);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+@media screen and (max-device-width: 575px){
+    .owl-carousel .owl-item{
+        margin: 10px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

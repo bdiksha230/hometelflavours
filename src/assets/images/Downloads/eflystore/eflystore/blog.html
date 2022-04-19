@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <!-- owl css  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            color: black;
+        }
+
+        #blog-carousel .carousel-content {
+            position: unset;
+        }
+
+
+
+        #blog-carousel>div.owl-nav>button {
+
+            padding: 1px 15px !important;
+            font-size: 30px;
+            background-color: white !important;
+            position: absolute;
+            bottom: -5px;
+            color: black;
+            border-radius: unset;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            #blog-carousel>div.owl-nav>button.owl-next {
+                right: 30px;
+            }
+
+            #blog-carousel>div.owl-nav>button.owl-prev {
+                left: unset;
+                right: -23px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo"
+                        width="120"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item"> <a class="nav-link" href="home.html">Home <span  class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="our_work.html">what we do </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="we_are.html">Crew</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="career.html">Why us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mybutton" onclick="myFunction()">
+        <button class="GetinTouch">Get In Touch</button>
+    </div>
+
+
+    <div class="main-content blog">
+
+            <div class="first-section">
+			    <div class="container">
+				<h3>Blogs</h3>
+				<div class="space4"></div>
+				<h5>Recent Blogs</h5>
+					<div class="row">
+						<div class="col-md-6 col-sm-12 col-lg-6">
+							<div class="video">
+								<iframe width="100%" height="280" src="https://www.youtube.com/embed/1Aq9OJuS3ok"  ></iframe>
+							</div>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, maxime. Nisi,
+									repudiandae.
+									Odit laborum, consectetur dolores est voluptate nesciunt, quibusdam accusantium animi
+									obcaecati sit, magni ipsa autem omnis voluptatibus sunt!
+								</p>
+								<div class="space4"></div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-lg-6">
+							<div>
+								<img width="100%" src="images/blog_sec1.png" alt="">
+
+							</div>
+							<div>
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora repellendus architecto
+									accusantium facere modi minus neque, exercitationem, non rem fuga cupiditate repellat
+									commodi voluptatibus asperiores cumque autem, velit adipisci quidem.
+								</p>
+								<div class="space4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+
+            <div id="blog-carousel">
+				<div class="container">
+					<h4>Previous Blogs</h4>
+					<div class="carousel-wrap">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<img src="images/blog_C1.png" alt="">
+								<div class="carousel-content">
+									<p>Convallis turpis erat tempus, viverra aliquet. Nullam viverra nam auctor sit ipsum malesuada a, duis volutpat. </p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/blog_C2.png" alt="">
+								<div class="carousel-content">
+									<p>Convallis turpis erat tempus, viverra aliquet. Nullam viverra nam auctor sit ipsum malesuada a, duis volutpat.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/blog_C3.png" alt="">
+								<div class="carousel-content">
+									<p>Convallis turpis erat tempus, viverra aliquet. Nullam viverra nam auctor sit ipsum malesuada a, duis volutpat.  </p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/blog_C1.png" alt="">
+								<div class="carousel-content">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/blog_C1.png" alt="">
+								<div class="carousel-content">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/blog_C1.png" alt="">
+								<div class="carousel-content">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+    </div>
+
+
+   <footer>
+        <div class="f_col f_logo">
+            <div class="" style="text-align: center;">
+                <a href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+            </div>
+        </div>
+        <div class="f_col f_about">
+            <h6 class="f_heading">COMPANY INFORMATION</h6>
+            <p class="mt-4"><b>eFlyStore India Pvt. Ltd. ,</b> as the name suggests stands for a good beginning. As you
+                choose to begin a new story of growth and start your journey to scale new heights you need a partner who
+                can support you in your quest of growth.</p>
+            <p class="cin_num"><b>CIN no.: U51909PN2019PTC188236</b></p>
+        </div>
+        <div class="f_col f_q_link">
+            <h6 class="f_heading">QUICK LINKS</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="our_work.html">Our Work</a></li>
+                <li><a href="#">Gkaa Fashion</a></li>
+                <li><a href="#">Gkaa Store</a></li>
+                <li><a href="#">Weaga Wear</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_legal">
+            <h6 class="f_heading ">LEGAL</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_social desk_social">
+            <div class="">
+                <h6 class="f_heading ">FOLLOW US</h6>
+                <div class="">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\fb.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\instagam.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <h6 class="f_heading">NEWS LETTER</h6>
+                <div class="subscribe-form">
+                    <form action="subscription.php" method="post">
+                        <input type="email" name="subscribe_email" required><br />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="f_col f_social mob_social">
+		
+			<div class="row" >
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="footer-widget left">
+						<h6 class="f_heading">NEWS LETTER</h6>
+						<div class="subscribe-form">
+							<form action="subscription.php" method="post" >
+								<input type="email" name="subscribe_email" required>
+								<button>Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="right">
+						<h6 class="f_heading ">FOLLOW US</h6>
+						<ul class="list-inline mt-4">
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\fb.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\instagam.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\linkedin.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+
+        <div class="f_col f_extra"></div>
+        <div class="copyright">
+            <p>Copyright©2018- 2021 eFlyStore India Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

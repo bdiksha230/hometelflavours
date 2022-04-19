@@ -1,0 +1,216 @@
+<div class="banner">
+    <div class="container-fluid content">
+        <div class="row ">
+            <div class=" col-lg-1 col-md-1"></div>
+            <div class=" col-lg-7 col-xl-6 col-md-9">
+                <h1>Best Food in Town<div class="yellow-hr"></div>awaits you </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde architecto autem expedita voluptatibus
+                    voluptates, libero eveniet aperiam accusantium.</p>
+                <a routerLink="menu">Explore Food Items <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid get_food d-flex justify-content-center">
+    <div class="col col-lg-10 section-orange">
+        <h1 class="stepbox-title">How to get fresh food</h1>
+        <div class="step_row row row-cols-md-3 row-cols-sm-3   justify-content-center">
+            <!-- ONE -->
+            <div class="col-lg-3 col-xs-1 mt-2">
+                <div class="stepBox">
+                    <h1>1</h1>
+                    <p>pick meal</p>
+                </div>
+            </div>
+            <!-- TWO -->
+            <div class="col-lg-3 mt-2">
+                <div class="stepBox">
+                    <h1>2</h1>
+                    <p>choose how often</p>
+                </div>
+            </div>
+            <!-- THREE -->
+            <div class="col-lg-3 mt-2">
+                <div class="stepBox">
+                    <h1>3</h1>
+                    <p>your order delivered in 30 minutes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--     FOOD TYPE SRCOLL -->
+<div class="container scroll_heading">
+    <h1>Get fresh food in easy way <div class="yellow-hr"></div>
+    </h1>
+</div>
+<div class="container-fluid">
+
+    <owl-carousel-o [options]="foodTypeScroll">
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/SKr06QjQ/pizza.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">Pizza</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/3x2QwFTv/burger-2.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">Burger</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/440DbS4c/health.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">Health</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/qqN9H8wg/sandwich.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">Sandwich</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/JhmVHHrd/chineese.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">chinese</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/DZy9BVbr/idli-2.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">south indian</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/hvYSR4qb/thali.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">thali</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/tgLrnLNR/chicken.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">chicken</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/br44ysVg/paratha-2.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">paratha</h1>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="foodtypes">
+                <img class="food_menu_img" src="https://i.postimg.cc/SNBpqtw4/biryani.webp" alt="" routerLink="menu">
+                <h1 class="food_menu_title">rice and biryani</h1>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+
+<!-- delicious food for health -->
+<div class=" restro_bg">
+    <div class="row restro_row" style="width: 100%">
+        <div class="col-md-6 col-lg-7 col-sm-12 d-flex align-items-end justify-content-center">
+            <img class="chef_img" src="../../assets/images/chef.png" alt="">
+        </div>
+        <div class="col-md-5 col-lg-4 col-sm-9">
+            <div class="delicious_right">
+                <h3>delicious food<div class="yellow-hr"></div>for healthy life</h3>
+                <p>Every individual needs healthy food for healthy body
+                    <br>Get healthy food deliverd at doorstep
+                </p>
+                <button type="button" class="order_now" routerLink="menu">order now</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #a52b22">
+    <div class="row services_row">
+        <div class="left_service col-lg-6">
+            <div class="services_head">
+                <h3>Our services</h3>
+                <p>we serve best quality food</p>
+            </div>
+            <div class="services">
+                <div class="service_bg col-md-5 col-lg-7 col-xl-6">
+                    <h4>Fast delivery</h4>
+                    <p>Promise to deliver within 30mins.</p>
+                </div>
+                <div class=" service_bg col-md-5 col-lg-7 col-xl-6">
+                    <h4>Pick up</h4>
+                    <p>Pickup delivery ata your doorstep.</p>
+                </div>
+                <div class=" service_bg col-md-5 col-lg-7 col-xl-6">
+                    <h4>Dine in</h4>
+                    <p>Enjoy your food fresh crispy and hot</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" style="padding: 0;">
+            <img class="food_img-right" src="../../assets/images/burger.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- FOODBOX -->
+<div class="container mt-4 mb-4">
+    <div class="fav-food">
+        <h1 class=" text-center">Customers Favourites food </h1>
+        <div class="row">
+            <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
+                <div class="foodbox" *ngIf="i<=3">
+                    <img src="{{fd.foodImg}}" />
+                    <h2>{{fd.foodName}}</h2>
+                </div>
+            </div>
+        </div>
+        <a routerLink="menu" class="viewmorebtn">View More <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- BOOK TABLE -->
+<div class="form_container">
+    <div class="table_book container d-flex flex-column align-items-center">
+        <h4>Advanced Booking</h4>
+        <h2>Reserved a Table</h2>
+        <form>
+            <div class="row justify-content-center">
+                <div class="inputDiv col-lg-4 col-md-6 col-sm-7 col-xs-6">
+                    <label for="validationCustom01" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" autocomplete="off"
+                        required>
+                </div>
+                <div class="inputDiv col-lg-4 col-md-6 col-sm-7">
+                    <label for="validationCustom01" class="form-label">Mobile no</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" autocomplete="off"
+                        required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="inputDiv col-lg-2 col-md-4 col-sm-7">
+                    <label for="validationCustom01" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="validationCustom01" value="" autocomplete="off"
+                        required>
+                </div>
+                <div class="inputDiv col-lg-2 col-md-4 col-sm-7">
+                    <label for="validationCustom01" class="form-label">Time</label>
+                    <input type="time" class="form-control" id="validationCustom01" value="" autocomplete="off"
+                        required>
+                </div>
+                <div class="inputDiv col-lg-2 col-md-4 col-sm-7">
+                    <label for="validationCustom01" class="form-label">Member</label>
+                    <input type="number" class="form-control" id="validationCustom01" value="" min="1" max="20"
+                        [autocomplete]="false" required>
+                </div>
+            </div>
+            <div class=" reserve_btnDiv d-flex justify-content-center">
+                <button class="table_btn" type="button">Reserve a Table</button>
+            </div>
+        </form>
+    </div>
+</div>

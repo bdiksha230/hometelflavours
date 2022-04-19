@@ -1,0 +1,467 @@
+.banner{
+    background-image: url('../../../assets/images/bannerimg.jpg');
+    height: 660px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content{
+    position: absolute;
+    top: 25%;
+   
+}
+.content h1{
+    font-size: 45px;
+    color: #fff;
+    font-weight: normal; 
+    line-height: 120%;
+    margin-bottom: 2rem;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+.content p{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 140%;
+}
+.content a{
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.content a:hover{
+    background-color: var(--yellow);
+    color: #fff;
+}
+@media screen and (max-device-width: 767px){
+    .content h1{
+        font-size: 3rem;
+    }
+    .content p{
+        line-height: 27px;
+    }
+}
+@media screen and (max-device-width: 575px){
+    .content h1{
+        font-size: 1.8rem;
+        line-height: 120%;
+        
+    }
+    .content p{
+        line-height: 22px;
+        font-size: 1rem;
+    }
+    .content a{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+}
+@media screen and (max-device-width: 374px){
+    .content h1{
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
+}
+/* HOW TO GET FRESH FOOD */
+.get_food{
+    margin-top: -100px;
+}
+.section-orange{
+    background-color: var(--orange);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.step_row{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.stepBox{
+    background-color: var(--pink);
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+}
+.stepBox h1{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 120%;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+.stepBox p{
+    font-size: 20px;
+    font-style: italic;
+    line-height: 120%;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.stepbox-title{
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-device-width: 575px){
+    .step_row{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .stepBox{
+        padding: 0.5rem 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: auto !important;
+
+    }
+    .stepBox h1{
+        font-size: 1.1rem;
+    }
+    .stepBox p{
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+    .stepbox-title{
+        font-size: 1.37rem;
+        word-spacing: 3px;
+    }
+}
+/* FOOD MENU SCROLL START */
+.scroll_heading h1{
+    font-size: 2.3rem;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.food_menu_img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.food_menu_title{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.prev .next{
+    width: 30px;
+    height: auto;
+}
+@media screen and (max-device-width: 575px){
+    .scroll_heading h1{
+        font-size: 1.37rem;
+        word-spacing: 3px;
+    }
+    .food_menu_title{
+        font-size: 1rem;
+         
+    }
+}
+/* FOOD MENU SCROLL  END*/
+
+/* RESTARANT IMAGE */
+.restro_bg{
+    background: url("../../../assets/images/restro_bg.webp") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    object-fit: center;
+     
+}
+.chef_img{
+    margin-top: 4rem;
+    width: 85%;
+}
+.delicious_right{
+    margin-top: 23%;
+   
+}
+.delicious_right h3{
+    font-size: 2rem;
+    line-height: 120%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+.delicious_right p{
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+.delicious_right button{
+     background-color: var(--yellow);
+     font-size: 1.2rem;
+     color: #fff;
+     font-weight: normal;
+     text-decoration: none;
+     padding: 0.5rem 1.2rem;
+     border: none;
+     border-radius: 5px;
+     text-transform: capitalize;
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 1rem;
+}
+
+@media screen and (max-device-width: 767px){
+    .restro_row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .delicious_right{
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .delicious_right h3{
+        font-size: 1.8rem;
+        line-height: 140%;
+    }
+}
+@media screen and (max-device-width: 574px){
+    .delicious_right h3{
+        font-size: 1.37rem;
+        line-height: 120%;
+    }
+}
+.food_img-right{
+    width: 100%;
+    height: auto;
+    margin-top: -4rem;
+}
+/* SERVICES */
+.services_row{
+    padding: 0;
+}
+ .left_service{
+     padding-top: 4rem;
+     z-index: 40;
+ }
+.services_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services_head h3{
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+.services_head p{
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--yellow);
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service_bg{
+    background-color: var(--pink);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px 1px #8d8989;
+}
+.service_bg h4{
+    font-family: var(--body-font);
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+.service_bg p{
+    font-family: var(--body-font);
+    color: #212121;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+@media screen and (max-device-width: 991px){
+    .food_img-right{
+    width: 110%;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: -10%;
+    }
+}
+.fav-food h1{
+    font-size: 2.5rem;
+    line-height: 120%;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-family: title-font;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+@media screen and (max-device-width: 574px){
+    .services_head h3{
+        font-size: 1.37rem;
+    }
+    .services_head p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .fav-food h1{
+        font-size: 1.37rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .form_container h2{
+        font-size: 1.37rem !important;
+        text-align: center;
+    }
+}
+
+
+
+
+/* FOOD SUSSEGST */
+.foodbox{
+    padding: 10px 5px;
+}
+.foodbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodbox h1{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.viewmorebtn{
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+/* BOOK A TABLE */
+.form_container{
+    background-image: url("../../../assets/images/table_book.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form_container h4{
+    font-size: 1.2rem;
+    color: var(--orange);
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-decoration: none;
+    margin-top: 3rem;
+    font-family: var(--body-font);
+}
+.form_container h2{
+    font-size: 2.7rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: title-font;
+    word-spacing: 3px;
+}
+.form_container form{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.form-label{
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 0;
+    font-family: var(--body-font);
+}
+.form_container form .row{
+    margin-bottom: 2rem;
+}
+.reserve_btnDiv{
+
+}
+.table_book{
+    margin-top: 2rem;
+}
+.table_btn{
+    color: #fff;
+    background-color: var(--yellow);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: normal;
+    border: 1px solid #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px #dedcdc;
+}
+.table_btn:hover{
+    box-shadow: 1px 1px 2px #dedcdc;
+}
+@media screen and (max-device-width: 767px) {
+    .inputDiv{
+        margin-bottom: 0.8rem;
+    }
+}
