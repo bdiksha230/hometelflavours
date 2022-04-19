@@ -1,5 +1,6 @@
+
 .banner{
-    background-image: url('../../../assets/images/bannerimg.jpg');
+    background-image: url('https://i.postimg.cc/g0DC09sx/bannerimg.jpg');
     height: 660px;
     background-position: center top;
     background-size: cover;
@@ -9,7 +10,6 @@
 .content{
     position: absolute;
     top: 25%;
-   
 }
 .content h1{
     font-size: 45px;
@@ -93,7 +93,12 @@
     border-radius: 5px;
     text-align: center;
     height: 200px;
+    box-shadow: 1px 2px 8px 0px #323030;
 }
+.stepBox:hover{
+    box-shadow: 0px 0px 8px 1px #8d8989;
+}
+
 .stepBox h1{
     font-size: 50px;
     font-weight: bold;
@@ -132,7 +137,6 @@
         margin-left: 1rem;
         margin-right: 1rem;
         height: auto !important;
-
     }
     .stepBox h1{
         font-size: 1.1rem;
@@ -315,6 +319,9 @@
     margin-bottom: 1rem;
     padding: 0.5rem 2rem;
     border-radius: 50px;
+    box-shadow: 1px 2px 8px 0px #323030;
+}
+.service_bg:hover{
     box-shadow: 0px 0px 8px 1px #8d8989;
 }
 .service_bg h4{
@@ -373,10 +380,6 @@
         text-align: center;
     }
 }
-
-
-
-
 /* FOOD SUSSEGST */
 .foodbox{
     padding: 10px 5px;
