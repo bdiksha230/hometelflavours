@@ -154,6 +154,8 @@
       padding: 12% 10%;
     }
   }
-  @media screen and (max-device-width: 563px){
-
+  @media screen and (max-device-width: 574px){
+     .tab button {
+       font-size: 0.8rem;
+    }
   }
