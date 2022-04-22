@@ -41,15 +41,18 @@
         margin-left: 0;
     }
 }
-@media screen and (max-device-width: 767px){
+@media screen and (max-device-width: 991px){
     .navbar-collapse {
         flex-basis: 100%;
         flex-grow: 1;
         align-items: center;
-        position: fixed;
-        top: 17%;
+        position: absolute;
+        top: 90%;
         background-color: #fff;
         z-index: 100;
-        width: 90%;
+        width: 95%;
+    }
+    .nav-item {
+        margin: 0.7rem 1rem;
     }
 }

@@ -50,6 +50,9 @@ i{
 .logoDiv{
     width: 100%;
 }
+.logoDiv a{
+    text-decoration: none !important;
+}
 
 .logoDiv p{
     color: var(--orange);
