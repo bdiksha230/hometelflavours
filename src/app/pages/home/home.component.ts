@@ -33,11 +33,7 @@ export class HomeComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     nav: true,
-<<<<<<< HEAD
     navText: ['<img class="prev" src="https://i.postimg.cc/qvYYL9vC/prev.png">', '<img class="next" src="https://i.postimg.cc/Qx6cK7Xf/next.png">'],
-=======
-    navText: ['<img class="prev" src="assets/images/prev.png">', '<img class="next" src="assets/images/next.png">'],
->>>>>>> bfdd142cf2a0a51e725af3d76f1c313b002e8b5a
     responsive: {
       0: {
         items: 3
