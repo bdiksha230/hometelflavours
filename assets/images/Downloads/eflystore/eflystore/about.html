@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>About</title>
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- bootstrap-icons  -->
+    <script src="js/fontawesome.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- owl css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		   <style>
+        #we-are-carousel {
+            width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+
+
+        #we-are-carousel .item {
+            text-align: center;
+        }
+
+
+        #we-are-carousel .owl-prev.disabled,
+        #we-are-carousel .owl-next.disabled {
+            pointer-events: none;
+            opacity: 0.2;
+        }
+
+        #we-are-carousel .owl-next {
+            position: absolute;
+            right: -46px;
+            top: 40%;
+            font-size: 50px !important;
+        }
+
+        #we-are-carousel .owl-prev {
+            position: absolute;
+            left: -46px;
+            top: 40%;
+            font-size: 50px !important;
+        }
+
+        #we-are-carousel .prev-slide:hover {
+            background-position: 0px -53px;
+        }
+
+        #we-are-carousel.next-slide:hover {
+            background-position: -24px -53px;
+        }
+
+        /* commented  for we are  */
+        /* .owl-theme .owl-nav [class*='owl-']:hover {
+            background: unset !important;
+        } */
+
+        span.img-text {
+            text-decoration: none;
+            outline: none;
+            transition: all 0.4s ease;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            cursor: pointer;
+            width: 100%;
+            font-size: 23px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+        span.img-text:hover {
+            color: #2caae1;
+        }
+
+
+        .carousel-content {
+            position: absolute;
+            top: 40%;
+            background-color: #0000007d;
+            padding-top: 20px;
+            bottom: 0;
+        }
+
+        @media screen and (max-width:768px) {
+            #we-are-carousel {
+                width: 450px;
+
+            }
+        }
+
+
+
+
+
+
+        #owl-carousel1>div.owl-nav>button {
+
+            padding: 1px 15px !important;
+            font-size: 30px;
+            background-color: white !important;
+            position: absolute;
+            bottom: -5px;
+            color: black;
+            border-radius: unset;
+        }
+
+        #owl-carousel1>div.owl-nav>button.owl-prev {
+            left: 50%;
+            transform: translateX(-69px);
+        }
+
+        #owl-carousel1>div.owl-nav>button.owl-next {
+            right: 50%;
+            transform: translateX(41px);
+
+        }
+
+        .content-carousel>h3 {
+            margin: 100px 100px;
+        }
+
+        .content-carousel>p {
+            margin-left: 100px;
+        }
+
+        .owl-theme .owl-nav [class*='owl-']:hover {
+            color: black;
+        }
+
+        @media screen and (max-width: 768px) {
+            #owl-carousel1>div.owl-nav>button.owl-next {
+                right: 30px;
+            }
+
+            #owl-carousel1>div.owl-nav>button.owl-prev {
+                left: unset;
+                right: -23px;
+            }
+        }
+    </style>
+	<style>
+		
+	</style>
+
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">				
+				<li class="nav-item"> <a class="nav-link" href="home.html">Home <span
+                                    class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="our_work.html">what we do </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="we_are.html">Crew</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="career.html">Why us</a></li>
+              
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<div id="mybutton"  onclick="myFunction()">
+<button class="GetinTouch">Get In Touch</button>
+</div>
+
+
+
+<div class="Main_content about">	
+
+	<section id="description">
+			<div class="section-wrapper">
+				<!-- <h3>GOALS AND OBJECTIVES</h3> -->
+				<div data-index="2018" style="display: block;">
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-lg-1 "></div>
+						<div class="col-md-12 col-sm-12 col-lg-5 timeline_left">
+							<h4>About Us</h4>
+							<p>Deep Research and Development, a creative approach, developing answers, and something we term a stimulant to a steady market are all vital to us. A sum of these is who we are!</p>
+								<div class="space1"></div>
+							<div class="history">		<h4>History of Company - 2018</h4>
+							<p>This was the year for in-depth market research, sketching out a blueprint, and charting a course for where we were heading, as well as estimating what was about to happen. This year was also a period of analysis, which yielded results in the shape of new initiatives and programs.</p></div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-lg-6 timeline_right">
+							<img src="images/about_timeline.png" alt="">
+						</div>
+
+					</div>
+
+				</div>
+				<div data-index="2019">
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-lg-1 "></div>
+						<div class="col-md-12 col-sm-12 col-lg-5 timeline_left">
+							<h4>About Us</h4>
+							<p>Deep Research and Development, a creative approach, developing answers, and something we term a stimulant to a steady market are all vital to us. A sum of these is who we are!</p>
+								<div class="space1"></div>
+							<div class="history">	<h4>History of Company - 2019</h4>
+							<p>This was the year we finally announced ourselves to the public; on December 6, 2019, our organization was officially registered. This year brought us many rewarding changes as we refined our workforce structure and growth strategy, allowing us to watch our company's trajectory accelerate even further.</p></div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-lg-6 timeline_right">
+							<img src="images/about_timeline.png" alt="">
+						</div>
+
+					</div>
+
+				</div>
+				<div data-index="2020">
+
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-lg-1 "></div>
+						<div class="col-md-12 col-sm-12 col-lg-5 timeline_left">
+							<h4>About Us</h4>
+							<p>Deep Research and Development, a creative approach, developing answers, and something we term a stimulant to a steady market are all vital to us. A sum of these is who we are!</p>
+								<div class="space1"></div>
+								<div class="history">	<h4>History of Company - 2020</h4>
+							<p>This was the year when our ideas began to take shape and our market solutions began to get traction; it was also the year when our projects progressed and we advanced to a new level of research and development. Even at the times as hard as Covid, didn’t hit our aim and we kept moving.</p></div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-lg-6 timeline_right">
+							<img src="images/about_timeline.png" alt="">
+						</div>
+
+					</div>
+
+				</div>
+				<div data-index="2021">
+
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-lg-1 "></div>
+					<div class="col-md-12 col-sm-12 col-lg-5 timeline_left">
+							<h4>About Us</h4>
+							<p>Deep Research and Development, a creative approach, developing answers, and something we term a stimulant to a steady market are all vital to us. A sum of these is who we are!</p>
+								<div class="space1"></div>
+							<div class="history">		<h4>History of Company - 2021</h4>
+							<p>This year has been a long and bewildering trip for us! This year has been one of the finest for us, from employment growth to workspace expansion! New project adoption, spectacular field excursions, and collaborative success: 2021 has it all!</p></div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-lg-6 timeline_right">
+							<img src="images/about_timeline.png" alt="">
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<section id="timeline">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-lg-3 "></div>
+			<div class="col-md-12 col-sm-12 col-lg-6 ">
+				<div class="section-wrapper">
+					<div class="line">
+
+
+						<div data-mobiletext="2018" data-index="2018" class="year y2018 dot active"></div>
+
+						<div data-mobiletext="2019" data-index="2019" class="year y2019 dot"></div>
+
+						<div data-mobiletext="2020" data-index="2020" class="year y2020 dot"></div>
+
+						<div data-mobiletext="2021" data-index="2021" class="year y2021 dot"></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 col-lg-3 "></div>
+			
+			</div>
+		</section>
+
+
+	<div class="about_section2" >
+		<div class="container">
+			<div class="row ">
+				
+					<div class="col-md-6 col-sm-12">
+						<div class="vision">
+							<h4 class="text-center">Our Vision</h4>
+							<p>Stabilization of the market to allow for seamless, hassle-free settlements. And to accommodate as many different setups as possible during our run.</p>
+							<div  class="space1"></div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="mission">
+							<h4 class="text-center">Our Mission</h4>
+							<p>Offering the most effective stimulant to aid in the creation of a stable market by providing the required methodologies and tactics. </p>	
+							<div  class="space1"></div>	
+						</div>						
+					</div>
+				
+			</div>
+			<div class="row ">
+				<div class="col-md-6 col-sm-12">
+					<div class="values_img">
+						<img src="images/about_sec1.png"/>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 ">
+					<div class="values">
+						<h4 class="text-center">Our Values</h4>
+						<p> We've built our entire company on the principles of honesty and integrity.<br/><br/>Developing solid, mutually beneficial relationships with our workers, stakeholders, and consumers.<br/><br/>All employees' human rights and privacy rights are respected. Discrimination of any shape or form, whether based on religion, belief, color, ethnicity, nationality, gender, or physical impairment, is eradicated.<br/><br/>We feel that providing a secure and healthy workplace for all workers is a crucial component of showing them respect.<br/><br/>Providing a dynamic platform for our workers to develop their creativity and abilities, as well as continue their education.</p>
+						<div  class="space1"></div>	
+					</div>					
+				</div>
+			</div>
+			<div class="row sec3">
+				<div class="col-md-12 col-sm-12">
+					<h4 class="text-left">Perception of Functioning</h4>
+					<div  class="space1"></div>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="about_section3" >
+			<div class="row">
+				
+    <div id="owl-carousel1" class="owl-carousel owl-carousel1 owl-theme">
+        <div class="item">
+
+            <div class="row">
+				
+                <div class="col-md-6 col-sm-12  order-2">
+                     <div class="content-carousel">
+                        <h1>Connectivity</h1>
+                        <p>We place a strong emphasis on linking processes to bring the industry together and make it run more smoothly and efficiently. Bridging the digital and physical areas for improved market results.</p>        
+					</div>
+					
+                </div>
+                <div class="col-md-6 col-sm-12  order-1">
+                   <img class="half-img" src="images/about_sec2_1.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item">
+			
+            <div class="row">               
+                <div class="col-md-6 col-sm-12 order-2">
+                     <div class="content-carousel">
+                        <h1>Solutions</h1>
+                        <p>When appropriate answers are offered, each organization feels progress. We hope to build solutions and strategies that will assist to raise a market full of prospects and profitable achievements.</p>        
+            </div>
+                </div>
+                <div class="col-md-6 col-sm-12 order-1">
+                   <img class="half-img" src="images/about_sec2_2.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item">
+			
+            <div class="row">           
+                <div class="col-md-6 col-sm-12 order-2">
+                     <div class="content-carousel">
+                        <h1>Business opportunity</h1>
+                        <p>Our primary goal for a brighter future is to improve connections in need to generate commercial prospects. We place a high priority on broadening the coverage of our company by giving many possibilities and opportunities. </p>        
+            </div>
+                </div>
+                <div class="col-md-6 col-sm-12 order-1">
+                   <img class="half-img" src="images/about_sec2_3.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+		
+		<div class="item">
+			
+            <div class="row">           
+                <div class="col-md-6 col-sm-12 order-2">
+                     <div class="content-carousel">
+                        <h1>Business Growth</h1>
+                        <p>we also prioritize the development of individuals who collaborate with us. We focus on establishing key strategies to achieve business growth. Linkage, economic opportunities, services, and consistency are the main stages to success in growing one's firm. Every business owner wishes to expand his or her company, and we are here to help them achieve their goals.</p>        
+            </div>
+                </div>
+                <div class="col-md-6 col-sm-12 order-1">
+                   <img class="half-img" src="images/about_sec2_4.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    
+
+    </div>
+
+				
+			</div>
+	</div>
+	
+	<div class="about_section4" >
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<img src="images/about_sec3.png"/>
+			</div>				
+				
+			<div class="col-lg-6 col-md-6">			
+				<div class="bd_M">
+					<h4 class="text-left">Brand Development and Management</h4>
+					<p>We assist in the development of a corporate strategy for differentiating a company's image, goods, and services from those of its rivals. Aligning a brand with your business objectives, conveying a brand to its target market, and upgrading or enhancing them as needed is all part of development.</p>
+					<div  class="space1"></div>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+	
+	
+	<div class="about_section5">
+		<div class="row">
+			<div class="col-md-6 col-lg-6 order-2">
+				<div class="O_M">
+					<h4 class="text-left">Operation Management</h4>
+					<p>We administer business methods to help organizations achieve maximum efficiency by embracing the four key focal dimensions: money, customers, internal processes, and learning and innovation.</p>
+					<div class="space1"></div>
+				</div>
+			</div>				
+				
+			<div class="col-md-6 col-lg-6 order-1">	
+				<img src="images/about_sec4.png">				
+			</div>
+				
+		</div>
+	</div>
+	
+	<div class="about_section6">
+		<div class="row">
+			<div class="col-lg-12 ">
+				<div class="space3"></div>
+				<h4 class="text-center">Our Future</h4>
+				<p>Stronger foundations, it is thought, lead to a healthier future. We ensure that we have a strong foundation and, as a result, a bright future since we concentrate on research and development, which is the most crucial and first stage.</p>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+
+   <footer>
+        <div class="f_col f_logo">
+            <div class="" style="text-align: center;">
+                <a href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+            </div>
+        </div>
+        <div class="f_col f_about">
+            <h6 class="f_heading">COMPANY INFORMATION</h6>
+            <p class="mt-4"><b>eFlyStore India Pvt. Ltd. ,</b> as the name suggests stands for a good beginning. As you
+                choose to begin a new story of growth and start your journey to scale new heights you need a partner who
+                can support you in your quest of growth.</p>
+            <p class="cin_num"><b>CIN no.: U51909PN2019PTC188236</b></p>
+        </div>
+        <div class="f_col f_q_link">
+            <h6 class="f_heading">QUICK LINKS</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="our_work.html">Our Work</a></li>
+                <li><a href="#">Gkaa Fashion</a></li>
+                <li><a href="#">Gkaa Store</a></li>
+                <li><a href="#">Weaga Wear</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_legal">
+            <h6 class="f_heading ">LEGAL</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_social desk_social">
+            <div class="">
+                <h6 class="f_heading ">FOLLOW US</h6>
+                <div class="">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\fb.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\instagam.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <h6 class="f_heading">NEWS LETTER</h6>
+                <div class="subscribe-form">
+                    <form action="subscription.php" method="post">
+                        <input type="email" name="subscribe_email" required><br />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="f_col f_social mob_social">
+		
+			<div class="row" >
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="footer-widget left">
+						<h6 class="f_heading">NEWS LETTER</h6>
+						<div class="subscribe-form">
+							<form action="subscription.php" method="post" >
+								<input type="email" name="subscribe_email" required>
+								<button>Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="right">
+						<h6 class="f_heading ">FOLLOW US</h6>
+						<ul class="list-inline mt-4">
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\fb.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\instagam.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\linkedin.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+
+        <div class="f_col f_extra"></div>
+        <div class="copyright">
+            <p>Copyright©2018- 2021 eFlyStore India Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+        $('.owl-carousel1').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+	
+<script>
+function myFunction() {
+$("#GetInTouch").css("display", "block");
+}
+
+</script>
+
+<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+	<!-- <script  src="./script.js"></script> -->
+
+	<script>
+
+		$(function () {
+
+			var timeline = $('#timeline').find('.line');
+			var timelineDot = $(timeline).find('.dot');
+			var numDots = $(timeline).find('.year.dot').length * 4 + 1;
+			var mobileYear = $(timeline).find('.year.dot');
+			var mobileDefault = $(timeline).find('.dot.js-mobile-default');
+
+			$(mobileDefault).addClass('active');
+
+			// CONTENT SWITCH
+			$(timelineDot).each(function () {
+				$(this).click(function () {
+					var currentDesc = $('#description').find('.section-wrapper > div');
+					$(currentDesc).hide();
+
+					matchContent($(this)).fadeIn();
+				});
+			});
+
+			var resizeTimer;
+			var initialSize = $(window).width();
+
+			$(window).resize(function () {
+
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(function () {
+					var delayedSize = $(window).width();
+					// if we resize but not enough to change layout, proceed as usual
+					if ((initialSize > 480 && delayedSize > 480) || (initialSize < 481 && delayedSize < 481)) {
+						if (initialSize > 480 && delayedSize > 480) {
+							desktopTimeline();
+						} else if (initialSize < 481 && delayedSize < 481) {
+							mobileTimeline();
+						}
+					}
+
+					// if we resize the page and switch between desktop and mobile layouts, reload the page
+					else {
+						location.reload();
+					}
+
+					initialSize = delayedSize;
+				}, 250);
+
+			});
+
+			// DESKTOP FUNCTIONALITY
+			function desktopTimeline() {
+				$(timelineDot).each(function () {
+
+					// highlight the appropriate portion of the line as you click the dots
+					var ind = Number(findIndex($(this)));
+					var x = round((0.9 / numDots) * ind * 100, 4);
+					var y = round(((0.9 / numDots) * 100 / 2), 4);
+					var z = x + y;
+
+					$(this).click(function () {
+						$(timelineDot).removeClass('active complete');
+						$(this).addClass('active');
+						$(this).prevAll('.dot').addClass('complete');
+						$(timeline).css({
+							background: 'linear-gradient(to right, ' +
+								'#ffffff ' + z + '%, ' +
+								'#ffffff ' + z + '%)'
+						});
+					});
+				});
+			}
+
+			// MOBILE FUNCTIONALITY
+			function mobileTimeline() {
+				$(timelineDot).click(function () {
+					var mobileQuarter = $(this).nextUntil('.year.dot');
+
+					if ($(this).hasClass('year')) {
+
+						$(timelineDot).not($(this)).removeClass('active complete');
+						$(this).addClass('complete');
+						$(this).next().addClass('active');
+						$(this).prevAll('.dot.year').addClass('complete');
+						$('.dot.quarter').not(mobileQuarter).slideUp(500);
+						$(mobileQuarter).slideDown(500);
+
+					} else if ($(this).hasClass('quarter')) {
+
+						var parentYear = $(this).prevUntil('.dot.year');
+
+						$(this).addClass('active');
+						$(timelineDot).not($(this)).removeClass('active');
+						$(mobileQuarter).add(mobileYear).removeClass('complete');
+						$(parentYear).add($(this)).add($(this).prevAll('.dot.year')).addClass('complete');
+					}
+				});
+			}
+
+			// RETRIEVE ELEMENT'S INDEX AMONG VISIBLE DOTS
+			function findIndex(dataInd) {
+				return $(dataInd).attr('data-index');
+			}
+			// FIND MATCHING CONTENT
+			function matchContent(matchedContent) {
+				return $('#description').find('.section-wrapper > div[data-index="' + $(matchedContent).attr("data-index") + '"]');
+			}
+
+			// ROUND DECIMALS
+			function round(value, decimals) {
+				return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+			}
+
+
+			$(window).resize();
+		});
+	</script>
+
+
+
+</body>
+</html>

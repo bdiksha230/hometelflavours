@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- bootstrap-icons  -->
+    <script src="js/fontawesome.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+	
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+      <!-- owl css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+   				     <li class="nav-item active"> <a class="nav-link" href="home.html">Home <span  class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="our_work.html">what we do </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="we_are.html">Crew</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="career.html">Why us</a></li>
+              
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<div id="mybutton"  onclick="myFunction()">
+<button class="GetinTouch">Get In Touch</button>
+</div>
+
+<div class="Main_content home">
+	
+
+	<div class="banner_home" style="">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-lg-8 left">
+					<p class="banner_heading">Efly store is a catalyst that manages, smoothes and speeds up the process of development ‘<b>of you</b>’.</p>	
+					<a class="slider_btn" href="#">Know More</a>
+						<div class="space1"></div>
+				</div>
+				<div class="col-lg-4 right">
+					<div class="form-div contact_form"  id="GetInTouch" >
+						<div class="text-center">
+							<h4>Contact Form</h4>
+						</div>
+						<form action="contact.php" method="post">
+							<div class="form-group">
+								<label for="inputname">Full Name<span class="required">*</span></label>
+								<input name="name" type="text" class="form-control" id="inputname" aria-describedby="emailHelp" required>
+							</div>
+							<div class="form-group">
+								<label for="inputCompanyName">Company Name</label>
+								<input type="text" name="company_name" class="form-control" id="inputCompanyName" aria-describedby="emailHelp" required>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">Email address<span class="required">*</span></label>
+								<input type="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+							</div>
+							<div class="form-group">
+								<label for="inputContact">Contact No.<span class="required">*</span></label>
+								<input type="text" name="contact_no" class="form-control" id="inputContact" aria-describedby="emailHelp" required>
+							</div>
+							<div class="form-group">
+								<label for="inputMessage">Your Message<span class="required">*</span></label>
+								<textarea name="message" class="form-control" style="resize: none;" placeholder="Message......" name="message" id="inputMessage" rows="4" required></textarea>
+							</div>
+							<div>
+								<button name="submit" type="submit" class="btn btn-primary submit-btn">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="home_section1" >
+		<div  class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<img src="images/home_sec1.png"/>
+				</div>
+				<div class="col-lg-5">
+					<h4 class="sec_heading">Motive and Motivation</h4>
+					<p>Precautions are always better than cure, and thorough R&D is always better than non-success. With this in mind, we strive to provide a consistent, value-driven, and enjoyable experience every time you interact with us.</p>
+					<a class="col_btn" href="#">Know More</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="home_section2" >
+		<div  class="container">
+			<div class="row">
+				<div class="col-lg-5 order-2">
+					<h4 class="sec_heading">Evolve with Efly</h4>
+					<p>We model brains to fit reality. We are a platform that is available to you, by you, and for you! From your thoughts through our R&D and implementation, we at Efly want to make sure your ideas fly.</p>
+					<a class="col_btn" href="#">Know More</a>
+					<div class="space2"></div>
+				</div>
+				<div class="col-lg-7 order-1">
+					<img src="images/home_sec1.png"/>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	<div class="home_section3" >
+		<div  class="container">
+			<h4 class="sec_heading2"><b>Our Projects</b></h4>
+			
+			 <div class="carousel-wrap">
+				<div class="owl-carousel owl-theme">
+
+					<div class="item">
+
+						<img src="images/test.png" alt="">
+
+						<div class="carousel-content">
+							<h4>Weaga Wear Private Limited</h4>
+							<p>Weaga wear is an apparel manufacturing unit. It is a faction for those clothing brands that are budding and want assistance in a smooth establishment. Weaga Wear has a strong research and development network, and its touchpoints are support administration and social expedition.</p>
+						</div>
+					</div>
+					<div class="item">
+
+						<img src="images/test.png" alt="">
+
+						<div class="carousel-content">
+							<h4>Gkaa Fashion</h4>
+							<p>Gkaa fashion is a fashion ecosystem that encompasses all aspects of the industry. It's a structure that will take you from a single fiber of your garment to wearing your items in your preferred way. It assists you in exploring the enormous subject of fashion by providing you with content created by Gkaa's designers, stylists, writers, and researchers.</p>
+						</div>
+					</div>
+				<div class="item">
+
+					<img src="images/test.png" alt="">
+
+					<div class="carousel-content">
+						<h4>Gkaa Store</h4>
+						<p>Gkaa shop is an online and offline fashion marketplace that sells clothing for men and women of all ages. For the time being, the sort of clothes is 'casual or basic,' but it is anticipated to evolve into several different varieties in the coming years.</p>
+					</div>
+					</div>
+					<div class="item">
+
+						<img src="https://via.placeholder.com/250x300.png/0000FF" alt="">
+
+						<div class="carousel-content">
+							<h4>heading</h4>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus, earum nam
+								cupiditate
+								id
+								culpa ex doloremque architecto optio obcaecati illum tenetur libero odio consequatur ad,
+								excepturi
+								eveniet perspiciatis.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+
+						<img src="https://via.placeholder.com/250x300.png/0000FF" alt="">
+
+						<div class="carousel-content">
+							<h4>heading</h4>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus, earum nam
+								cupiditate
+								id
+								culpa ex doloremque architecto optio obcaecati illum tenetur libero odio consequatur ad,
+								excepturi
+								eveniet perspiciatis.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+
+						<img src="https://via.placeholder.com/250x300.png/0000FF" alt="">
+
+						<div class="carousel-content">
+							<h4>heading</h4>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae natus, earum nam
+								cupiditate
+								id
+								culpa ex doloremque architecto optio obcaecati illum tenetur libero odio consequatur ad,
+								excepturi
+								eveniet perspiciatis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hide_mobile">
+			<h4 class="sec_heading2"><b>Way to go</b></h4>
+			<p class="text1">We never stop working to enhance all aspects of an organization—processes, technologies, strategies, services, and so on. We believe that we can truly succeed via continual improvement, and that success comes from rethinking "how" we do things and figuring out "how" it can be done better no matter, big or small.</p>
+			</div><div class="space1"></div>
+			
+		</div>	
+	</div>
+		
+		
+	
+</div>
+
+
+
+    <footer>
+        <div class="f_col f_logo">
+            <div class="" style="text-align: center;">
+                <a href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+            </div>
+        </div>
+        <div class="f_col f_about">
+            <h6 class="f_heading">COMPANY INFORMATION</h6>
+            <p class="mt-4"><b>eFlyStore India Pvt. Ltd. ,</b> as the name suggests stands for a good beginning. As you
+                choose to begin a new story of growth and start your journey to scale new heights you need a partner who
+                can support you in your quest of growth.</p>
+            <p class="cin_num"><b>CIN no.: U51909PN2019PTC188236</b></p>
+        </div>
+        <div class="f_col f_q_link">
+            <h6 class="f_heading">QUICK LINKS</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="our_work.html">Our Work</a></li>
+                <li><a href="#">Gkaa Fashion</a></li>
+                <li><a href="#">Gkaa Store</a></li>
+                <li><a href="#">Weaga Wear</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_legal">
+            <h6 class="f_heading ">LEGAL</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_social desk_social">
+            <div class="">
+                <h6 class="f_heading ">FOLLOW US</h6>
+                <div class="">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\fb.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\instagam.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <h6 class="f_heading">NEWS LETTER</h6>
+                <div class="subscribe-form">
+                    <form action="subscription.php" method="post">
+                        <input type="email" name="subscribe_email" required><br />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="f_col f_social mob_social">
+		
+			<div class="row" >
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="footer-widget left">
+						<h6 class="f_heading">NEWS LETTER</h6>
+						<div class="subscribe-form">
+							<form action="subscription.php" method="post" >
+								<input type="email" name="subscribe_email" required>
+								<button>Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="right">
+						<h6 class="f_heading ">FOLLOW US</h6>
+						<ul class="list-inline mt-4">
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\fb.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\instagam.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\linkedin.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+
+        <div class="f_col f_extra"></div>
+        <div class="copyright">
+            <p>Copyright©2018- 2021 eFlyStore India Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+<script>
+function myFunction() {
+$("#GetInTouch").css("display", "block");
+}
+</script>
+</body>
+</html>

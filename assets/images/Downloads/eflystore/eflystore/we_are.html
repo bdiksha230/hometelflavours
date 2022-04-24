@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- bootstrap-icons  -->
+    <script src="js/fontawesome.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+	
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <!-- owl css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #we-are-carousel {
+            width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+
+
+        #we-are-carousel .item {
+            text-align: center;
+        }
+
+
+        #we-are-carousel .owl-prev.disabled,
+        #we-are-carousel .owl-next.disabled {
+            pointer-events: none;
+            opacity: 0.2;
+        }
+
+        #we-are-carousel .owl-next {
+            position: absolute;
+            right: -46px;
+            top: 40%;
+            font-size: 50px !important;
+        }
+
+        #we-are-carousel .owl-prev {
+            position: absolute;
+            left: -46px;
+            top: 40%;
+            font-size: 50px !important;
+        }
+
+        #we-are-carousel .prev-slide:hover {
+            background-position: 0px -53px;
+        }
+
+        #we-are-carousel.next-slide:hover {
+            background-position: -24px -53px;
+        }
+
+        /* commented  for we are  */
+        /* .owl-theme .owl-nav [class*='owl-']:hover {
+            background: unset !important;
+        } */
+
+        span.img-text {
+            text-decoration: none;
+            outline: none;
+            transition: all 0.4s ease;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            cursor: pointer;
+            width: 100%;
+            font-size: 23px;
+            display: block;
+            text-transform: capitalize;
+        }
+
+        span.img-text:hover {
+            color: #2caae1;
+        }
+
+
+        .carousel-content {
+            position: absolute;
+            top: 40%;
+            background-color: #0000007d;
+            padding-top: 20px;
+            bottom: 0;
+        }
+
+        @media screen and (max-width:768px) {
+            #we-are-carousel {
+                width: 450px;
+
+            }
+        }
+
+
+
+
+
+
+        #owl-carousel1>div.owl-nav>button {
+
+            padding: 1px 15px !important;
+            font-size: 30px;
+            background-color: white !important;
+            position: absolute;
+            bottom: -5px;
+            color: black;
+            border-radius: unset;
+        }
+
+        #owl-carousel1>div.owl-nav>button.owl-prev {
+            left: 50%;
+            transform: translateX(-69px);
+        }
+
+        #owl-carousel1>div.owl-nav>button.owl-next {
+            right: 50%;
+            transform: translateX(41px);
+
+        }
+
+        .content-carousel>h3 {
+            margin: 100px 100px;
+        }
+
+        .content-carousel>p {
+            margin-left: 100px;
+        }
+
+        .owl-theme .owl-nav [class*='owl-']:hover {
+            color: black;
+        }
+
+        @media screen and (max-width: 768px) {
+            #owl-carousel1>div.owl-nav>button.owl-next {
+                right: 30px;
+            }
+
+            #owl-carousel1>div.owl-nav>button.owl-prev {
+                left: unset;
+                right: -23px;
+            }
+        }
+    </style>
+
+		
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+				     <li class="nav-item"> <a class="nav-link" href="home.html">Home <span  class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="our_work.html">what we do </a></li>
+                        <li class="nav-item active"> <a class="nav-link" href="we_are.html">Crew</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="career.html">Why us</a></li>
+              
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<div id="mybutton"  onclick="myFunction()">
+<button class="GetinTouch">Get In Touch</button>
+</div>
+
+<div class="Main_content we_are">
+	
+
+	<div class="banner_we_are" style="">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-lg-7 left">
+					<h4>Our Team</h4>
+					<p> We're a team of passionate and crazy enthusiasts interested in the future of this market. We're a group of designers, writers, internet marketers, and a few techies. All of us, clearly define the reason for being in the area and are seeking to become crazier day by day. We talk, debate, fight, sit together, party, rejoice, and work for things that promise the finest outcomes! And, certainly, we despise giving up. </p>
+ 
+					<div class="space3"></div>
+				</div>
+				<div class="col-lg-1 "></div>
+				<div class="col-lg-4 right">
+					<div class="form-div contact_form" id="GetInTouch">
+						<div class="text-center">
+							<h4>Contact Form</h4>
+						</div>
+						<form action="" method="POST">
+							<div class="form-group">
+								<label for="inputname">Full Name<span class="required">*</span></label>
+								<input type="text" class="form-control" id="inputname" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+								<label for="inputCompanyName">Company Name</label>
+								<input type="text" class="form-control" id="inputCompanyName" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">Email address<span class="required">*</span></label>
+								<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+								<label for="inputContact">Contact No.<span class="required">*</span></label>
+								<input type="text" class="form-control" id="inputContact" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+								<label for="inputMessage">Your Message<span class="required">*</span></label>
+								<textarea class="form-control" style="resize: none;" placeholder="Message......" name="message" id="inputMessage" rows="4"></textarea>
+							</div>
+							<div>
+								<button type="submit" class="btn btn-primary submit-btn">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="we_are_section1" >
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-6 order-3"> 
+				<div class="space1"></div>
+					<img src="images/we_are_col1.png">
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4 order-2"> 
+					<h4 class="sec_heading">Evolve with Efly</h4>
+					<p>We're a bunch of people that go to great lengths to make the market a better place to live. And we acknowledge that with it comes consistency. We place a strong emphasis on linking streams to bring the market together and make it run more smoothly and efficiently.<br/> <br/>We work to improve the link between digital and physical channels to achieve greater transitions and more commercial opportunities.</p>
+				</div>
+				<div class="col-sm-12  col-lg-2 order-1"> </div>
+			</div>
+	</div>
+	
+	<div class="we_are_section2" >
+		<div  class="container">			
+			<div class="row">
+				<div class="col-lg-12"> 
+				
+				  <div id="we-are-carousel" class="carousel-wrap">
+					<h4 class="text-center">Hear from our team</h4>
+					<div class="owl-carousel owl-carousel2 owl-theme">
+
+						<div class="item">
+
+							<div class="user-info">
+								<img src="https://via.placeholder.com/100x100.png/979797" alt="">
+								<div>
+									<p>Saakshi Jain <br/>Brand manager and stylist</p>
+									<div  class="container">			
+									<div class="row">
+									<div class="col-lg-6 L"> <p>20 Nov 21 </p></div>
+									<div class="col-lg-6 R"> <p>10:30 am</p></div>
+									</div></div>
+								</div>
+							</div>
+							<div class="team-messages">I met this kid today outside the office, she said “Di you look so good! Can I look like that?” I smiled at her and said yes come inside this is where all the magic is! Since that day I’ve been more dedicated to styling people!</div>
+						</div>
+						<div class="item">
+
+							<div class="user-info">
+								<img src="https://via.placeholder.com/100x100.png/979797" alt="">
+								<div>
+									<p>Prachi Rijhwani <br/>Writer and fashion consultant</p>
+									<div  class="container">			
+									<div class="row">
+									<div class="col-lg-6 L"> <p>20 Nov 21 </p></div>
+									<div class="col-lg-6 R"> <p>1:30 pm</p></div>
+									</div></div>
+								</div>
+							</div>
+							<div class="team-messages">I observe everyone when they are working to frame a fiction in my mind and get lost in it for a while! You would not be surprised to know that, I am always caught doing so. </div>
+						</div>
+						<div class="item">
+
+							<div class="user-info">
+								<img src="https://via.placeholder.com/100x100.png/979797" alt="">
+								<div>
+									<p>Amruta Rane <br/>Graphic Designer<span style="color: #ffffff;">eflystore</span></p>
+									<div  class="container">			
+									<div class="row">
+									<div class="col-lg-6 L"> <p>25 Nov 21 </p></div>
+									<div class="col-lg-6 R"> <p>11:00 am</p></div>
+									</div></div>
+								</div>
+							</div>
+							<div class="team-messages">I am always at peace looking at my desk’s aesthetics, I believe that a beautiful and clean desk boosts my creativity and freshens my mind space.</div>
+						</div>
+						<div class="item">
+
+							<div class="user-info">
+								<img src="https://via.placeholder.com/100x100.png/979797" alt="">
+								<div class="">
+									<p>lorem ipsum</p>
+									<p>lorem ipsum dolor sit</p>
+								</div>
+							</div>
+							<div class="team-messages">
+								Convallis turpis erat tempus, viverra aliquet.
+								Nullam viverra nam auctor sit ipsum
+								malesuada a, duis volutpat. Convallis turpis
+								erat tempus, viverra aliquet. Nullam viverra
+								nam auctor sit ipsum malesuada a, duis
+								volutpat
+							</div>
+						</div>
+						<div class="item">
+
+							<div class="user-info">
+								<img src="https://via.placeholder.com/100x100.png/979797" alt="">
+								<div class="">
+									<p>lorem ipsum</p>
+									<p>lorem ipsum dolor sit</p>
+								</div>
+							</div>
+							<div class="team-messages">
+								Convallis turpis erat tempus, viverra aliquet.
+								Nullam viverra nam auctor sit ipsum
+								malesuada a, duis volutpat. Convallis turpis
+								erat tempus, viverra aliquet. Nullam viverra
+								nam auctor sit ipsum malesuada a, duis
+								volutpat
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1"> </div>
+					<div class="col-lg-7">
+					   <div id="we-are-form">
+							<div>
+								<p>What is on your mind?</p>
+								<form action="" method="POST">
+									<input id="emp_id" type="text" placeholder="Employee ID"> <br> <br>
+									<textarea name="message" id="message" rows="5"></textarea>
+									<input id="submit_ww" type="submit" value="post">
+								</form>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-4"> </div>
+				</div>
+				<div class="row" id="we_are_message_sec">
+					<div class="col-lg-1"> </div>
+					<div class="col-lg-10">
+						<div>
+							<h4 class="text-center">A message for you</h4>
+							<p class="text-center">We believe in penning our thoughts down so that we can keep our mind space for research!</p>
+							<p class="text-center">To understand is to accept and to accept is to unite! </p>
+							<p class="text-center">“Sharing is growing”</p>
+							<div class="space1"></div>	
+						</div>
+					</div>
+					<div class="col-lg-1"> </div>
+				</div>
+
+
+				</div>
+
+			</div>
+		</div>	
+	</div>
+	
+</div>
+
+
+
+
+   <footer>
+        <div class="f_col f_logo">
+            <div class="" style="text-align: center;">
+                <a href="#"><img src="images/header_logo.png" class="img-fluid" alt="logo" width="120"></a>
+            </div>
+        </div>
+        <div class="f_col f_about">
+            <h6 class="f_heading">COMPANY INFORMATION</h6>
+            <p class="mt-4"><b>eFlyStore India Pvt. Ltd. ,</b> as the name suggests stands for a good beginning. As you
+                choose to begin a new story of growth and start your journey to scale new heights you need a partner who
+                can support you in your quest of growth.</p>
+            <p class="cin_num"><b>CIN no.: U51909PN2019PTC188236</b></p>
+        </div>
+        <div class="f_col f_q_link">
+            <h6 class="f_heading">QUICK LINKS</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="our_work.html">Our Work</a></li>
+                <li><a href="#">Gkaa Fashion</a></li>
+                <li><a href="#">Gkaa Store</a></li>
+                <li><a href="#">Weaga Wear</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_legal">
+            <h6 class="f_heading ">LEGAL</h6>
+            <ul class="list-unstyled footer-link mt-4">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+            </ul>
+        </div>
+
+        <div class="f_col f_social desk_social">
+            <div class="">
+                <h6 class="f_heading ">FOLLOW US</h6>
+                <div class="">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\fb.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\instagam.png"></a></li>
+                        <li class="list-inline-item"><a href="#"><img width="30"  src="images\linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <h6 class="f_heading">NEWS LETTER</h6>
+                <div class="subscribe-form">
+                    <form action="subscription.php" method="post">
+                        <input type="email" name="subscribe_email" required><br />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="f_col f_social mob_social">
+		
+			<div class="row" >
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="footer-widget left">
+						<h6 class="f_heading">NEWS LETTER</h6>
+						<div class="subscribe-form">
+							<form action="subscription.php" method="post" >
+								<input type="email" name="subscribe_email" required>
+								<button>Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-6">
+					<div class="right">
+						<h6 class="f_heading ">FOLLOW US</h6>
+						<ul class="list-inline mt-4">
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\fb.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\instagam.png"></a></li>
+							<li class="list-inline-item"><a href="#"><img width="30" src="images\linkedin.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+
+        <div class="f_col f_extra"></div>
+        <div class="copyright">
+            <p>Copyright©2018- 2021 eFlyStore India Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+
+
+<script>
+function myFunction() {
+$("#GetInTouch").css("display", "block");
+}
+</script>
+
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./script.js"></script> -->
+
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+        $('.owl-carousel1').owlCarousel({
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+
+
+</body>
+</html>
